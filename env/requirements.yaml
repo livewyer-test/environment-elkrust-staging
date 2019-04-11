@@ -19,6 +19,9 @@ dependencies:
 - name: test-service
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.1
+- name: vote
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
 - name: worker
   repository: http://jenkins-x-chartmuseum:8080
   version: 1.0.1
