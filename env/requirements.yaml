@@ -15,19 +15,19 @@ dependencies:
   version: 0.0.2
 - name: vote
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.5
+  version: 0.0.6
 - name: worker
   repository: http://jenkins-x-chartmuseum:8080
   version: 1.0.2
-- name: postgresql
-  version: 0.9.5
-  repository: https://kubernetes-charts.storage.googleapis.com/ 
-  condition: postgresql.enabled
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://kubernetes-charts.storage.googleapis.com/
   tags:
   - db
-- name: redis
-  version: 1.2.2
+  version: 0.9.5
+- condition: redis.enabled
+  name: redis
   repository: https://kubernetes-charts.storage.googleapis.com/
-  condition: redis.enabled
   tags:
   - queue
+  version: 1.2.2
