@@ -36,3 +36,5 @@ postgresql:
 redis:
   enabled: true
   usePassword: false
+
+test: 1
